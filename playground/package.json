@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "my-module-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "test:deploy": "esno test-depoly.ts"
+  },
+  "devDependencies": {
+    "nuxt": "latest"
+  }
+}
