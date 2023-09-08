@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
+import { defineNuxtModule, createResolver } from "@nuxt/kit";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -11,15 +11,14 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt: "^3.0.0",
     },
   },
-  // Default configuration options of the Nuxt module
   defaults: {},
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
     nuxt.hook("nitro:config", (nitro) => {
-      // ensure `nitro.plugins` is initialized
       nitro.plugins = nitro.plugins || [];
-
-      // add your custom plugin
+      const { speculationRules } = nuxt.options as any;
+      nuxt.options.runtimeConfig.public.speculationRules =
+        speculationRules || {};
       nitro.plugins.push(resolve("runtime/plugin"));
     });
   },

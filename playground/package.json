@@ -6,7 +6,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "generate": "nuxi generate",
-    "test:deploy": "esno test-depoly.ts"
+    "test:deploy": "npx serve .output/public"
   },
   "devDependencies": {
     "nuxt": "latest"

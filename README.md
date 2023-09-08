@@ -23,36 +23,52 @@ My new Nuxt module for doing amazing things.
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- 🌲 &nbsp;Implement page preloading according to [Speculation Rules API](https://developer.chrome.com/blog/prerender-pages/)
 
 ## Quick Setup
 
-1. Add `my-module` dependency to your project
+1. Add `nuxt-speculation-rule` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D my-module
+pnpm add -D nuxt-speculation-rule
 
 # Using yarn
-yarn add --dev my-module
+yarn add --dev nuxt-speculation-rule
 
 # Using npm
-npm install --save-dev my-module
+npm install --save-dev nuxt-speculation-rule
 ```
 
-2. Add `my-module` to the `modules` section of `nuxt.config.ts`
+2. Add `nuxt-speculation-rule` to the `nuxt-speculation-rule` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    'my-module'
+    'nuxt-speculation-rule'
   ]
 })
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+That's it! You can now use nuxt-speculation-rule in your Nuxt app ✨
+
+## Config
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-speculation-rule'
+  ],
+  speculationRules: {
+    prerender: [
+      {
+        source: "list",
+        urls: ["/test1", "/test2"],
+      },
+    ],
+  },
+})
+```
 
 ## Development
 

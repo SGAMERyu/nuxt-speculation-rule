@@ -1,10 +1,10 @@
 <template>
   <div>
-    <NuxtLink to="/test1">
+    <a href="/test1">
       <p>test1</p>
-    </NuxtLink>
-    <NuxtLink to="/test2">
+    </a>
+    <a href="/test2">
       <p>test2</p>
-    </NuxtLink>
+    </a>
   </div>
 </template>

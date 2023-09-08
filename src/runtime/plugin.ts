@@ -1,16 +1,10 @@
-function createSpecScript() {}
+import { defineNitroPlugin } from "nitropack/dist/runtime/plugin";
+import { useRuntimeConfig } from "#imports";
 
 export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook("render:html", (html, { event }) => {
-    console.log("render:html", event);
+  nitroApp.hooks.hook("render:html", (html) => {
+    const speculationRules = useRuntimeConfig().public.speculationRules;
     html.head.push(`<script 
-      type="speculationrules">{
-        "prerender": [
-        {
-          "source": "list",
-          "urls": ["test1.html", "test2.html"]
-        }
-      ]
-    }</script>`);
+      type="speculationrules">${JSON.stringify(speculationRules)}</script>`);
   });
 });

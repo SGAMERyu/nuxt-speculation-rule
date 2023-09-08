@@ -36,12 +36,6 @@ devDependencies:
   nuxt:
     specifier: ^3.7.1
     version: 3.7.1(@types/node@18.17.14)(eslint@8.48.0)(rollup@3.29.0)(typescript@5.2.2)
-  polka:
-    specifier: ^0.5.2
-    version: 0.5.2
-  sirv:
-    specifier: ^2.0.3
-    version: 2.0.3
   vitest:
     specifier: ^0.34.3
     version: 0.34.3
@@ -62,11 +56,6 @@ packages:
 
   /@antfu/utils@0.7.6:
     resolution: {integrity: sha512-pvFiLP2BeOKA/ZOS6jxx4XhKzdVLHDhGlFEaZ2flWWYf2xOqVniqpk38I04DFRyz+L0ASggl7SkItTc+ZLju4w==}
-    dev: true
-
-  /@arr/every@1.0.1:
-    resolution: {integrity: sha512-UQFQ6SgyJ6LX42W8rHCs8KVc0JS0tzVL9ct4XYedJukskYVWTo49tNiMEK9C2HTyarbNiT/RVIRSY82vH+6sTg==}
-    engines: {node: '>=4'}
     dev: true
 
   /@babel/code-frame@7.22.13:
@@ -1477,10 +1466,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@polka/url@0.5.0:
-    resolution: {integrity: sha512-oZLYFEAzUKyi3SKnXvj32ZCEGH6RDnao7COuCVhDydMS9NrCSVXhM79VaKyP5+Zc33m0QXEd2DN3UkU7OsHcfw==}
-    dev: true
 
   /@polka/url@1.0.0-next.23:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
@@ -4656,13 +4641,6 @@ packages:
       - supports-color
     dev: true
 
-  /matchit@1.1.0:
-    resolution: {integrity: sha512-+nGYoOlfHmxe5BW5tE0EMJppXEwdSf8uBA1GTZC7Q77kbT35+VKLYJMzVNWCHSsga1ps1tPYFtFyvxvKzWVmMA==}
-    engines: {node: '>=6'}
-    dependencies:
-      '@arr/every': 1.0.1
-    dev: true
-
   /mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
     dev: true
@@ -5564,13 +5542,6 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.2
       pathe: 1.1.1
-
-  /polka@0.5.2:
-    resolution: {integrity: sha512-FVg3vDmCqP80tOrs+OeNlgXYmFppTXdjD5E7I4ET1NjvtNmQrb1/mJibybKkb/d4NA7YWAr1ojxuhpL3FHqdlw==}
-    dependencies:
-      '@polka/url': 0.5.0
-      trouter: 2.0.1
-    dev: true
 
   /postcss-calc@9.0.1(postcss@8.4.29):
     resolution: {integrity: sha512-TipgjGyzP5QzEhsOZUaIkeO5mKeMFpebWzRogWG/ysonUlnHcq5aJe0jOjpfzUU8PeSaBQnrE8ehR0QA5vs8PQ==}
@@ -6653,13 +6624,6 @@ packages:
 
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-    dev: true
-
-  /trouter@2.0.1:
-    resolution: {integrity: sha512-kr8SKKw94OI+xTGOkfsvwZQ8mWoikZDd2n8XZHjJVZUARZT+4/VV6cacRS6CLsH9bNm+HFIPU1Zx4CnNnb4qlQ==}
-    engines: {node: '>=6'}
-    dependencies:
-      matchit: 1.1.0
     dev: true
 
   /ts-api-utils@1.0.2(typescript@5.2.2):
